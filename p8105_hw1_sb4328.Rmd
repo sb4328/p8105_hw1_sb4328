@@ -22,5 +22,13 @@ prob1df =
       factor_vec = factor(c("low", "low", "low", "mod", "mod", "mod", "mod","high", "high", "high"))
 )
 ```
+Take the mean of each variable in my data frame
+```{r}
+mean(pull(prob1df, samp))
+mean(pull(prob1df, samp_gt_0))
+mean(pull(prob1df, char_vec))
+mean(pull(prob1df, factor_vec))
+```
+The mean for my samp is 0.1026824 and the mean for my sample greater than zero is 0.6 but I could not get the mean for a character vector or the factor vector.
 
 ## Problem 2
